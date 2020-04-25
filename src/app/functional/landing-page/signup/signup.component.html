@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-5">
-                <h1 class="font-weight-bold text-dark text-center mt-5 mt-sm-1 my-md-1">Get Started</h1>
+                <h1 class="font-weight-bold text-secondary text-center mt-5 mt-sm-1 my-md-1">Get Started</h1>
                 <div class="container">
                     <form>
                         <div class="form-group">
@@ -17,10 +17,11 @@
                             <label for="password">Password</label>
                             <input type="password" id="password" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-block font-weight-bold">Sign up</button>
+                        <button type="submit" class="btn btn-block font-weight-bold"
+                        (click)="onSubmit()">Sign up</button>
                     </form>
                     <p class="lead mt-3">Already have an account?
-                        <a routerLink="/unicaan/login">Login</a>
+                        <a routerLink="/login">Login</a>
                     </p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-@import './../../../constants/variables.scss';
+@import './../../../../constants/variables.scss';
 
 .btn{
     border-color: $unicaan;
@@ -11,6 +11,9 @@
     background-color: $unicaan-dark;
     color: whitesmoke; 
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.welcome{
+    color: $unicaan;
 }
 p >a{
     color: $unicaan;

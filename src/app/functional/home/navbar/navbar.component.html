@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md fixed-top p-2">
+    <a href="" class="navbar-brand  text-white">
+        <i class="fa fa-life-ring fa-lg font-weight-bold" aria-hidden="true"> UNICAAN</i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headNav">
+        <i class="fa fa-bars fa-lg text-white" aria-hidden="true"></i>
+    </button>
+    <div class="row collapse navbar-collapse" id="headNav">
+        <div class="col-md-5">
+            <form class="mx-2">
+                <div class="input-group">
+                    <input type="text" class="form-control top-search-input" placeholder="Search"
+                     (focus)="onFocus()"  (blur)="onBlur()">
+                    <button type="submit" class="btn top-search-button input-group-append"
+                        [ngClass]="{'top-search-btn-hover': searchInputFocus === true}">
+                        <i class="fa fa-search" [ngStyle]="{'color': searchInputFocus ? 'orange' : 'white'}"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-7">
+            <h2>abcd</h2>
+        </div>
+    </div>
+</nav>

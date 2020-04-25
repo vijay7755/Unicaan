@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-6 px-5">
                     <div class="justify-content-center align-items-center">
-                        <h1 class="text-dark text-center font-weight-bold mb-4 mt-2">Welcome Back !</h1>
+                        <h1 class="text-secondary text-center font-weight-bold mb-4 mt-2">Welcome Back !</h1>
                         <form>
                             <div class="form-group">
                                 <label for="emailOrUsername">Email or Username</label>
@@ -22,10 +22,11 @@
                                     <a href="" class="text-muted">Forget password ?</a>
                                 </small>
                             </div>
-                            <button type="submit" class="btn btn-block font-weight-bold">Log in</button>
+                            <button type="submit" class="btn btn-block font-weight-bold"
+                             (click)="onSubmit()">Log in</button>
                         </form>
                         <p class="lead mt-3">Not yet created an account?
-                            <a routerLink="/unicaan/signup">Sign up</a>
+                            <a routerLink="/signup">Sign up</a>
                         </p>
                     </div>
                 </div>

@@ -1,23 +1,11 @@
-import { SignupComponent } from './landing-page/signup/signup.component';
-import { LoginComponent } from './landing-page/login/login.component';
-import { HomeComponent } from './home/home.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingContentComponent } from './landing-page/landing-content/landing-content.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/unicaan', pathMatch: 'full' },
-  {
-    path: 'unicaan', component: LandingPageComponent,
-    children: [
-      {path:'', component:LandingContentComponent},
-      { path: 'login', component: LoginComponent },
-      { path: 'signup', component: SignupComponent }
-    ]
-  },
-  { path: 'home', component: HomeComponent }
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  {path:'', loadChildren:() => import('./functional/landing-page/landingPage.module').then(m => m.LandingPageModule)},
+  {path:'home', loadChildren: () => import('./functional/home/home.module').then(m => m.HomeModule)}
 ];
 
 @NgModule({
