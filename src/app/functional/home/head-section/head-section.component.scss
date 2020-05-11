@@ -1,0 +1,56 @@
+@import './../../../../constants/variables.scss';
+
+/* Tag section */
+.head-nav-menu {
+    overflow: auto;
+    white-space: nowrap;
+}
+/* End of tag section */
+
+/* Post section */
+.status-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-input {
+    width: 40rem;
+    padding: 0px 10px;
+}
+.status-input > input {
+    border: 1px solid rgb(141, 141, 141);
+    transition: all .4s;
+}
+.status-input > input:focus {
+    border: 1px solid $unicaan-light;
+    box-shadow: none;
+}
+.post-item {
+    border: 2px solid $unicaan;
+    color: $unicaan;
+    transition: all .3s;
+}
+.post-item:hover {
+    background-color: $unicaan;
+    color: white;
+}
+/* End of post section */
+
+/* Circle-Suggestion Section */
+.sugg-circle-section {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 16rem;
+}
+.sugg-circle-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(223, 223, 223);
+}
+.sugg-circle-bar > button {
+    background-color: rgb(53, 50, 45);
+    color: white;
+}
+/* End of Circle-Suggestion Section */
