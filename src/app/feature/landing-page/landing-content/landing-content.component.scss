@@ -10,7 +10,7 @@
     color: $unicaan;
 }
 .started{
-    border-style: none;;
+    border-style: none;
     background-color: $unicaan;
     color:white;
     width: 20rem;
@@ -19,7 +19,7 @@
 }
 .started:hover{
     transition-duration: 0.4s;
-    background-color: #fa8a0a;
+    background-color: $unicaan-dark;
     color: whitesmoke; 
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -27,7 +27,7 @@
     color: $unicaan;
 }
 .banner> p >a:hover{
-    color: #fa8a0a;
+    color: $unicaan-dark;
 }
 
 .image-container{
@@ -67,12 +67,14 @@
     width: 20rem;
     height: 20rem;
     border-radius: 10.5rem;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     outline: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 .started-atlast:hover{
     background-color: $unicaan-dark;
-    color: whitesmoke; 
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
+    color: whitesmoke;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }

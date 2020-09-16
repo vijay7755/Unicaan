@@ -1,4 +1,4 @@
-@import './../../../../constants/variables.scss';
+@import './../../constants/variables.scss';
 
 /* navbar */
 .navbar {
@@ -10,7 +10,7 @@ a>i:hover {
     color: #fde9d1;
 }
 .top-search-input {
-    background-color: #fdb059bb;
+    background-color: $unicaan-lighter;
     border: none;
     box-shadow: none;
     // color: white;
@@ -21,10 +21,11 @@ a>i:hover {
     background-color: whitesmoke;
 }
 .top-search-button {
-    background-color: #fdb059bb;
+    background-color: $unicaan-lighter;
     border: none;
     box-shadow: none;
     transition: all .4s;
+    margin-left: -3px;
 }
 .top-search-btn-hover {
     background-color: whitesmoke;

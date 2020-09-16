@@ -14,3 +14,15 @@
     cursor: pointer;
     color: grey;
 }
+
+.haeder-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feed-info {
+    margin: 0px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: start;
+}
